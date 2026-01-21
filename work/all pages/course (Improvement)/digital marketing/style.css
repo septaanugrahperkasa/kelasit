@@ -1,0 +1,1245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Kanit:wght@100&family=Open+Sans:wght@400&family=Lato&family=Playfair+Display&family=Ubuntu:wght@400&family=Rubik&family=Commissioner:wght@700&display=swap');
+
+
+:root {
+	--text-font: "Roboto";
+	--dua-font: "Kanit";
+	--third-font: "Open Sans";
+	--second-font: "Lato";
+	--lima-font: "Playfair Display";
+	--enam-font: "Ubuntu";
+	--tujuh-font: "Rubik";
+	--trial-font: "Commissioner";
+}
+:root {
+  --ZIndex-giant: 400000000;
+  --ZIndex-bigger: 200000000;
+  --ZIndex-big: 800;
+  --ZIndex-medium: 500;
+  --ZIndex-small: 5;
+  --ZIndex-smaller: 1;
+  --ZIndex-back: -1;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+
+*{
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+		/*(CONTENT PAGE)*/
+.section .long-box {
+	width: 90%;
+	margin: auto;
+}
+	/*(TITLE)*/
+.section .long-box .title-box {
+	text-align: center;
+}
+.section .long-box .main-title {
+	font-family: var(--second-font);
+}
+.section .long-box .title-one {
+	font-family: var(--second-font);
+}
+.section .long-box .title-two {
+	font-family: var(--third-font);
+}
+.section .long-box .title-three {
+	font-family: var(--third-font);
+}
+	/*(PARAGRAPH)*/
+.section .long-box .main-paragraph {
+	font-family: var(--second-font);
+}
+.section .long-box .paragraph-premium {
+	font-family: var(--second-font);
+}
+.section .long-box .paragraph {
+	font-family: var(--third-font);
+}
+	/*(BUTTON)*/
+.section .long-box .button-premium {
+	display: block;
+	border: none;
+	outline: none;
+	width: 90%;
+	margin: auto;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	font-family: var(--second-font);
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+	/*(IMAGE)*/
+.section .long-box .main-image {
+	width: 100%;
+	height: auto;
+}
+	/*(LINK)*/
+.section .long-box .main-link {
+	color: #000000;
+	font-family: var(--third-font);
+	text-decoration: none;
+}
+	/*(ELEMENT STYLE)*/
+.bold {
+	font-weight: bold;
+}
+.pd-mg {
+	padding: 0;
+	margin: 0;
+}
+.float_left {
+	float: left;
+	text-align: left;
+	width: 50%;
+}
+.float_right {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+.width_100 {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.width_90 {
+	width: 90%;
+}
+
+
+.section {
+	
+}
+
+
+
+
+
+	/*(SIDEBAR BOX)*/
+.section .sidebar_box {
+	width: 100%;
+}
+.section .sidebar_box .sidebar {
+	
+	
+}
+.section .sidebar_box .sidebar .main_box {
+	
+}
+.section .sidebar_box .sidebar .main_box .header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 11rem;
+	transition: .5s;
+	background-color: #F1F1F1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: var(--ZIndex-bigger);
+	
+}
+.section .sidebar_box .sidebar .main_box .header ul {
+	padding: 0;
+	margin: 0;
+	/*
+	background-color: #F1F1F1;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	*/
+}
+.section .sidebar_box .sidebar .main_box .header ul li {
+	list-style: none;
+	color: #000000;
+	font-size: 4rem;
+	font-family: var(--second-font);
+	//font-weight: bold;
+}
+.section .sidebar_box .sidebar .main_box .header ul li i {
+	cursor: pointer;
+}
+.section .sidebar_box .sidebar .main_box .header ul .left {
+	float: left;
+	//margin-left: 2rem;
+	position: relative;
+	left: 2rem;
+	font-weight: bold;
+}
+.section .sidebar_box .sidebar .main_box .header ul .right {
+	float: right;
+	//margin-right: 1rem;
+	position: relative;
+	right: -26.5rem;
+	//right: -38.5rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	overflow-y: auto;
+	transition: 0.6s ease;
+	transition-property: left;
+	font-family: var(--second-font);
+	z-index: var(--ZIndex-giant);
+	overflow: auto;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box.active{
+	left: 0;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar {
+	
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar {
+	margin-top: 20rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .close-btn {
+	
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu {
+	width: 100%;
+	margin-top: 80px;
+	//border: 1px solid #ff0000;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar ul {
+	padding: 0;
+	margin: 0;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu li {
+	list-style: none;
+	//position: relative;
+	padding: 0;
+	margin: 0;
+	//margin-top: 2rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item {
+	
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item a {
+	font-size: 3.3rem;
+	text-decoration: none;
+	display: block;
+	//padding: 5px 30px;
+	padding: 4rem 0 4rem 2rem;
+	line-height: 60px;
+	cursor: pointer;
+	color: #000;
+	//font-weight: bold;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item a:hover {
+	color: #FFFFFF;
+	background: #8621F8;
+	padding: 4rem 0 4rem 2rem;
+	transition: 0.3s ease;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item a .text {
+	//font-size: 3rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item a .icon {
+	//font-size: 3rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item a .dropdown {
+	position: absolute;
+	right: 0;
+	margin-right: 2rem;
+	transition: 0.3s ease;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item a .dropdown.rotate {
+	transform: rotate(90deg);
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item i {
+	margin-right: 15px;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_btn {
+	
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_btn i {
+	
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu {
+	background: rgba(255, 255, 255, 0.1);
+	display: none;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu  {
+	//margin-left: 1rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item {
+	//margin-left: 3rem;
+	//padding-left: 5rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item .sub_btn {
+	//padding-left: 3.5rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item .sub_btn i {
+	
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item .sub_menu {
+	//padding-left: 20rem;
+	//width: 100%;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item a {
+	padding-left: 5rem;
+	font-size: 3.3rem;
+	//margin-left: 5rem;
+	//padding-left: 5rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item .sub_menu li a {
+	font-size: 1.7rem;
+	//margin-left: 3rem;
+	padding-left: 10rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu li a {
+	padding-left: 5rem;
+	font-size: 3.3rem;
+	//margin-left: 5rem;
+	//padding-left: 5rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item a .text {
+	//font-size: 3rem;
+}
+.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item a .icon {
+	//font-size: 2rem;
+}
+//.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item .sub_menu .text {
+	font-size: 1.6rem;
+}
+//.section .sidebar_box .sidebar .main_box .navbar_box .navbar .side_bar .menu .item .sub_menu .item .sub_menu li a .icon {
+	font-size: 2rem;
+}
+.close-btn{
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #000000;
+  font-size: 4.5rem;
+  right: 0;
+  margin: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+	/*(HEADER BOX)*/
+.section .header_box {
+	width: 100%;
+}
+.section .header_box .header_one {
+	background-color: #53169cff;
+	//#34498e;
+	padding: 10rem 0 10rem 0;
+}
+.section .header_box .header .title-box {
+	width: 90%;
+	margin: auto;
+}
+.section .header_box .header .title-box h1 {
+	color: #ffb300ff;
+	//#FFFFFF;
+	font-size: 5.5rem;
+	line-height: 7rem;
+}
+.section .header_box .header .title-box p {
+	margin-top: 4rem;
+	//color: #ffb300;
+	font-size: 1.5rem;
+	line-height: 4rem;
+	color: #FFFFFF;
+	//font-family: var(--second-font);
+	font-weight: bold;
+}
+.section .header_box .header .title-box h2 {
+	font-size: 3rem;
+	line-height: 5rem;
+	color: #FFFFFF;
+	//font-weight: bold;
+}
+.section .header_box .header .title-box .link_background .button-premium {
+	background-color: #ffb300;
+	margin-top: 6rem;
+	padding: 3.5rem 0 3.5rem 0;
+	border-radius: 1rem;
+	color: #FFFFFF;
+	font-size: 3.5rem;
+}
+.section .header_box .header_two {
+	background-color: #FFFFFF;
+	padding: 3.5rem 0 7.8rem 0;
+	//margin-top: 15rem;
+}
+.section .header_box .header .title {
+	width: 90%;
+	margin: auto;
+}
+.section .header_box .header .title h2 {
+	font-size: 5rem;
+	line-height: 6rem;
+}
+.section .header_box .header .title p {
+	font-size: 1.4rem;
+	line-height: 4rem;
+}
+.section .header_box .header .title ul,
+.section .header_box .header .title ol {
+	width: 90%;
+	margin: 3rem auto;
+}
+.section .header_box .header .title ul li,
+.section .header_box .header .title ol li {
+	font-size: 2rem;
+	font-family: var(--third-font);
+	line-height: 4rem;
+	margin-top: 1.5rem;
+}
+.section .header_box .header_three {
+	background-color: #ffb320;
+	padding: 3.5rem 0 9.8rem 0;
+	//color: #FFFFFF;
+	//margin-top: 15rem;
+}
+.section .header_box .header_three .title .link_background .button-premium {
+	background-color: #FF0000;
+	margin-top: 6rem;
+	padding: 3.5rem 0 3.5rem 0;
+	border-radius: 1rem;
+	color: #FFFFFF;
+	font-size: 3.5rem;
+}
+.section .header_box .header .title-box .link_background .button-premium span,
+.section .header_box .header_three .title .link_background .button-premium span {
+	margin: 0 .4rem;
+}
+
+
+	/*(DIGITAL MARKETING TRAINING)*/
+.section .digital_marketing_training-box {
+	//padding: 0 0 0 0;
+}
+.section .digital_marketing_training-box .header_box .header {
+	
+}
+.section .digital_marketing_training-box .header_box .header .content {
+	
+}
+.section .digital_marketing_training-box .header_box .header .content .box {
+	margin-top: 8rem;
+}
+.section .digital_marketing_training-box .header_box .header .content .box h2 {
+	font-size: 5rem;
+	line-height: 6rem;
+}
+.section .digital_marketing_training-box  .header_box .header .content .box label {
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: bold;
+	font-family: var(--third-font);
+}
+.section .digital_marketing_training-box .header_box .header .content .box p {
+	font-size: 1.4rem;
+	line-height: 4rem;
+	//margin-top: 2rem;
+}
+.section .digital_marketing_training-box .header_box .header .content .box ul,
+.section .digital_marketing_training-box .header_box .header .content .box ol {
+	margin: 3rem 0 3rem 3rem;
+	//border: 1px solid #ff0000;
+}
+.section .digital_marketing_training-box .header_box .header .content .box ul li,
+.section .digital_marketing_training-box .header_box .header .content .box ol li {
+	font-size: 1.4rem;
+	line-height: 4rem;
+	font-family: var(--third-font);
+	margin-top: 2rem;
+}
+.section .digital_marketing_training-box .header_box .header .content .box .width_100 li,
+.section .digital_marketing_training-box .header_box .header .content .box .width_100 li {
+	margin-top: 4rem;
+}
+.section .digital_marketing_training-box .header_box .header .content .box ul li span,
+.section .digital_marketing_training-box .header_box .header .content .box ol li span {
+	display: block;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.section .digital_marketing_training-box .digital_marketing-training {
+	padding: 3.5rem 0 0 0;
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box {
+	
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .title {
+	
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .title h2 {
+	font-size: 5rem;
+	line-height: 6rem;
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .title p {
+	font-size: 1.5rem;
+	line-height: 4rem;
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content {
+	//padding-top: 1rem;
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box {
+	
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box .box {
+	margin-top: 5rem;
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box .box label {
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: bold;
+	font-family: var(--third-font);
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box .box img {
+	margin-top: 3rem;
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box .box p {
+	font-size: 1.2rem;
+	line-height: 4rem;
+	//margin-top: 2rem;
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box .box .button-premium {
+	background-color: #FF0000;
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box .box ol,
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box .box ul {
+	margin: 3rem 0 3rem 3rem;
+}
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box .box ol li,
+.section .digital_marketing_training-box .digital_marketing-training .content_box .content .text_box .box ul li {
+	font-size: 2rem;
+	line-height: 4rem;
+	font-family: var(--third-font);
+	margin-top: 1.5rem;
+}
+
+
+	/*(MAIN CONTENT)*/
+.section .main_content {
+	padding: 3.5rem 0 5.5rem 0;
+}
+.section .main_manual-content {
+	padding: 0 0 7rem 0;
+}
+.section .main_content .main_box {
+	
+}
+.section .main_content .main_box .content_box {
+	
+}
+.section .main_content .main_box .content_box .content {
+	
+}
+.section .main_content .main_box .content_box .content .text_box {
+	
+}
+.section .main_content .main_box .content_box .content .text_box .box {
+	margin-top: 8rem;
+}
+.section .main_content .main_box .content_box .content .text_box .box label {
+	font-size: 3rem;
+	line-height: 5rem;
+	font-weight: bold;
+	font-family: var(--third-font);
+}
+.section .main_content .main_box .content_box .content .text_box .box p {
+	font-size: 1.4rem;
+	line-height: 4rem;
+	//margin-top: 2rem;
+}
+.section .main_content .main_box .content_box .content .text_box .box ol,
+.section .main_content .main_box .content_box .content .text_box .box ul {
+	//width: 90%;
+	margin: 3rem 0 3rem 3rem;
+}
+.section .main_content .main_box .content_box .content .text_box .box ol li,
+.section .main_content .main_box .content_box .content .text_box .box ul li {
+	font-size: 1.4rem;
+	line-height: 4rem;
+	font-family: var(--third-font);
+	margin-top: 1.5rem;
+}
+.section .main_content .main_box .learning_content {
+	//background-color: #ff0000;
+}
+.section .main_content .main_box .learning_content .learning {
+	
+}
+.section .main_content .main_box .learning_content .learning .content_box {
+	
+}
+.section .main_content .main_box .learning_content .learning .content_box .content {
+	//padding: 10rem 0 10rem 0;
+	//padding-top: 1rem;
+}
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box {
+	
+}
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box {
+	margin-top: 8rem;
+}
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box label {
+	font-size: 3rem;
+	line-height: 5rem;
+	font-weight: bold;
+	font-family: var(--third-font);
+}
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box h2 {
+	font-size: 5rem;
+	line-height: 6rem;
+}
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box img {
+	margin-top: 3rem;
+}
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box p {
+	font-size: 1.4rem;
+	line-height: 4rem;
+	//margin-top: 2rem;
+}
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box .button-premium {
+	background-color: #FF0000;
+}
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box ol,
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box ul {
+	//width: 90%;
+	margin: 3rem 0 3rem 3rem;
+}
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box ol li,
+.section .main_content .main_box .learning_content .learning .content_box .content .text_box .box ul li {
+	font-size: 1.4rem;
+	line-height: 4rem;
+	font-family: var(--third-font);
+	margin-top: 1.5rem;
+}
+
+
+	/*(BACKGROUND BOX)*/
+.section .background_box {
+	width: 100%;
+	padding: 3.5rem 0 7.8rem 0;
+	//margin: 10rem 0 10rem 0;
+}
+.section .background_box .background {
+	
+}
+	/*==(BACKGROUND BOX ONE)==*/
+.section .background_box-one {
+	background-color: #000000;
+	width: 100%;
+	padding: 4.5rem 0 10rem 0;
+	color: #FFFFFF;
+}
+.section .background_box .background .title-box {
+	
+}
+.section .background_box .background .title-box h2 {
+	color: #ffb320;
+	font-size: 4rem;
+	line-height: 6rem;
+}
+.section .background_box .background .title-box p {
+	font-size: 1rem;
+	line-height: 4rem;
+}
+.section .box_background .background .title-box .link_background {
+	text-align: center;
+}
+.section .box_background .background .title-box .link_background .background_link-box {
+	background-color: #ffb320ff;
+	width: 90%;
+	padding: 3.5rem 0 3.5rem 0;
+	border-radius: 1rem;
+	margin-top: 6rem;
+	font-size: 3.5rem;
+}
+.section .box_background .background .title-box .link_background .background_link-box span {
+	margin: 0 .4rem;
+}
+			/*==(BACKGROUND BOX TWO)==*/
+.section .background_box-two {
+	background-color: #000000;
+	width: 100%;
+	padding: 5.5rem 0 7rem 0;
+	color: #FFFFFF;
+}
+.section .box_background .background .title-box .link_background .background_link_box-two {
+	background-color: #FF0000;
+	width: 70%;
+	border-radius: 1rem;
+	padding: 3.5rem 0 3.5rem 0;
+	margin: 5.5rem 0 0 0;
+	font-size: 3.5rem;
+	
+}
+.section .box_background .background .title-box .link_background .background_link_box-two span {
+	margin: 0 .4rem;
+}
+.section .box_background .background .title-box .link_background .background_link_box-two .text {
+	font-size: 3.5rem;
+	//text-align: left;
+	//margin: 0;
+	//margin-top: 8rem;
+	//margin: 5rem 0 15rem 0;
+}
+.section .box_background .background {
+	width: 90%;
+	margin: auto;
+}
+.section .box_background .background .title-box {
+	width: 100%;
+	color: #FFFFFF;
+	text-align: left;
+}
+.section .box_background .background .title-box h2 {
+	
+}
+.section .box_background .background .title-box h3 {
+	font-size: 4rem;
+	line-height: 5rem;
+}
+.section .box_background .background .title-box p {
+	
+}
+.section .box_background .background .box {
+	color: #FFFFFF;
+	margin-top: 10rem;
+}
+.section .box_background .background .box label {
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: bold;
+	font-family: var(--third-font);
+}
+.section .box_background .background .box ul,
+.section .box_background .background .box ol {
+	width: 90%;
+	margin: 3rem auto;
+}
+.section .box_background .background .box .width_100 {
+	width: 100%;
+	margin: 3rem auto;
+}
+.section .box_background .background .box ul li,
+.section .box_background .background .box ol li {
+	font-size: 1.5rem;
+	font-weight: 4rem;
+	font-family: var(--third-font);
+	margin-top: 1.5rem;
+}
+.section .box_background .background .box ul li {
+	list-style: none;
+	margin-top: 3rem;
+}
+.section .box_background .background .box ul li span {
+	
+}
+.section .box_background .background .box ul li .icon:before {
+	content: "\2714";
+	border-radius: 0.2em;
+	display: inline-block;
+	width: 6.5%;
+	height: auto;
+	vertical-align: bottom;
+	font-size: 1.8rem;
+	color: #000;
+	float: left;
+	background-color: #FF0000;
+	padding: .8rem .8rem .9rem 1.6rem;
+	border-radius: 50rem;
+	//margin-top: -.5rem;
+	//border: 1px solid yellow;
+}
+.section .box_background .background .box ul li .text {
+	width: 86%;
+	//padding-right: 2rem;
+	font-size: 1.7rem;
+	line-height: 4rem;
+	font-weight: bold;
+	font-family: var(--third-font);
+	float: right;
+	margin-left: 1rem;
+	//border: 1px solid red;
+}
+
+
+	/*(TRAINING SCHEDULE AND PRICE)*/
+.section .training_schedule_and_price-box {
+	background-color: #e0dad3a4;
+	width: 100%;
+	padding: 3rem 0 6.8rem 0;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price {
+	width: 90%;
+	margin: auto;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .title-box h1 {
+	font-size: 7rem;
+	line-height: 8rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .box .text {
+	width: 90%;
+	margin: 10rem auto;
+	text-align: center;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .box .text h2 {
+	font-size: 5rem;
+	line-height: 6rem;
+	font-weight: bold;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .box .text p {
+	font-size: 2rem;
+	line-height: 4rem;
+	text-align: left;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box {
+	padding: 3.5rem 0 3.5rem 0;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .title {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .title h2 {
+	font-size: 5rem;
+	line-height: 6rem;
+	text-align: center;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box {
+	background-color: #FFFFFF;
+	padding: 6rem 0 .1rem 0;
+	margin-top: 5rem;
+	border-radius: 2rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box {
+	width: 85%;
+	//padding-bottom: 6rem;
+	margin: auto;
+	//border-bottom: 3px solid #A9A9A9;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .title {
+	text-align: center;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .title h2 {
+	margin: 0;
+	font-size: 5rem;
+	line-height: 6rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .title h2 span {
+	display: block;
+	margin-top: 1.5rem;
+	color: #A9A9A9;
+	font-size: 4rem;
+	line-height: 5rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .title h3 {
+	font-size: 3.5rem;
+	line-height: 4.5rem;
+	font-weight: bold;
+	margin-top: 1.5rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .text {
+	//padding-bottom: 6rem;
+	//margin: auto;
+	//border-bottom: 3px solid #A9A9A9;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .text ul {
+	padding-bottom: 10rem;
+	border-bottom: 3px solid #A9A9A9;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .text ul li {
+	list-style: none;
+	margin-top: 2.5rem;
+	font-size: 2.7rem;
+	line-height: 3.5rem;
+	text-align: left;
+	font-family: var(--third-font);
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .text ul li span {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .text ul li .icon {
+	//border: 2px solid green;
+	float: left;
+	width: 6%;
+	color: #FF0000;
+	font-size: 3.5rem;
+	margin-right: .5rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .text ul .error,
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .text ul .error .icon .fa-exclamation-circle {
+	color: #a9a9a9;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .text ul li .icon i {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .text ul li .txt {
+	//border: 2px solid blue;
+	float: right;
+	width: 88%;
+	margin: 0;
+	//margin-left: .5rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title h2 {
+	font-size: 5rem;
+	line-height: 6rem;
+	font-weight: bold;
+	text-align: center;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title .countdown {
+	background-color: #FF0000;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-top: 3rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title .countdown .count {
+	display: inline-block;
+	margin: 0 .8rem 0 .8rem;
+	color: #FFFFFF;
+	text-align: center;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title .countdown .count h2 {
+	font-size: 4rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title .countdown .count p {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title .countdown .count .day {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title .countdown .count .hour {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title .countdown .count .minute {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .title .countdown .count .second {
+	
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .text {
+	text-align: center;
+	//border: 1px solid green;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .text h3 {
+	font-size: 3.5rem;
+	line-height: 4.5rem;
+	margin-top: 5rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .text h3 span {
+	display: block;
+	font-weight: bold;
+	font-family: var(--first-font);
+	margin-top: 1rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .text p {
+	font-size: 2.5rem;
+	line-height: 3.5rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 1rem;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .text .link_background {
+	text-align: center;
+}
+.section .training_schedule_and_price-box .training_schedule_and-price .price_card-box .price_card .content_box .content .text_box .box .information_box .information .box .text .link_background .button-premium {
+	display: inline-block;
+	background-color: #FF0000;
+	width: 100%;
+	padding: 3rem 0 3rem 0;
+	margin: 5rem 0 -2rem 0;
+	border-radius: 1rem;
+	font-size: 3rem;
+}
+
+
+	/*(DIRECT QUESTIONS)*/
+.section .direct_questions-box {
+	background-color: #e0dad3a4;
+	width: 100%;
+	padding: 3.5rem 0 11rem 0;
+}
+.section .direct_questions-box .title-box {
+	width: 90%;
+	margin: auto;
+}
+.section .direct_questions-box .title-box h1 {
+	font-size: 6rem;
+	line-height: 7rem;
+	font-weight: bold;
+}
+.section .direct_questions-box .direct_questions {
+	width: 80%;
+	margin: auto;
+}
+.section .direct_questions-box .direct_questions .content_box {
+	margin-top: 10rem;
+}
+.section .direct_questions-box .direct_questions .content_box .box {
+	
+}
+.section .direct_questions-box .direct_questions .content_box .box ul {
+	padding: 0;
+}
+.section .direct_questions-box .direct_questions .content_box .box ul li {
+	list-style: none;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 2rem;
+	margin-top: 4rem;
+}
+.section .direct_questions-box .direct_questions .content_box .box ul li label {
+	display: block;
+	//font-size: 2.5rem;
+	//font-family: var(--third-font);
+	//margin-top: 1.5rem;
+	//font-weight: bold;
+	border: .5px solid #eee;
+	cursor: pointer;
+	position: relative;
+}
+.section .direct_questions-box .direct_questions .content_box .box ul li label .faq_text {
+	//border: 1px solid #ff0000;
+	width: 90%;
+	float: left;
+	font-size: 2.7rem;
+	font-family: var(--third-font);
+	line-height: 4rem;
+	font-weight: bold;
+}
+.section .direct_questions-box .direct_questions .content_box .box ul li label .faq_icon {
+	//border: 1px solid green;
+	float: right;
+	font-size: 3.5rem;
+	margin-top: .5rem;
+}
+.section .direct_questions-box .direct_questions .content_box .box ul li ul {
+	padding: 0;
+	margin-top: 2rem;
+}
+.section .direct_questions-box .direct_questions .content_box .box ul input {
+	display: none;
+}
+.section .direct_questions-box .direct_questions .content_box .box ul p {
+	font-size: 1.7rem;
+	line-height: 4rem;
+	margin: 0 auto;
+	//background: #ddd;
+	padding-left: 10px;
+	height: 0;
+	overflow: hidden;
+	transition: all .5s;
+	//font-weight: bold;
+}
+.section .direct_questions-box .direct_questions .content_box .box .information_box {
+	margin-top: 15rem;
+}
+.section .direct_questions-box .direct_questions .content_box .box .information_box h2 {
+	font-size: 4.5rem;
+	line-height: 6rem;
+	text-align: center;
+}
+.section .direct_questions-box .direct_questions .content_box .box .information_box h2 span {
+	display: block;
+	margin-top: 2rem;
+}
+.section .direct_questions-box .direct_questions .content_box .box .information_box .button-premium {
+	background-color: green;
+	padding: 3.5rem 0 3.5rem 0;
+	border-radius: 1rem;
+	color: #FFFFFF;
+	font-size: 3.5rem;
+	line-height: 5rem;
+}
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle1:checked + .directQuestionsContentBox1,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle2:checked + .directQuestionsContentBox2,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle3:checked + .directQuestionsContentBox3,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle4:checked + .directQuestionsContentBox4,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle5:checked + .directQuestionsContentBox5,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle6:checked + .directQuestionsContentBox6,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle7:checked + .directQuestionsContentBox7,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle8:checked + .directQuestionsContentBox8,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle9:checked + .directQuestionsContentBox9,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle10:checked + .directQuestionsContentBox10,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle11:checked + .directQuestionsContentBox11,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle12:checked + .directQuestionsContentBox12,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle13:checked + .directQuestionsContentBox13 {
+	padding: 3rem 0 3rem 10px;
+	height: auto;
+	//height: 45rem;
+}
+/*
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle2:checked + .faq_icon,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle3:checked + .faq_icon,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle4:checked + .faq_icon,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle5:checked + .faq_icon,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle6:checked + .faq_icon,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle7:checked + .faq_icon,
+.section .direct_questions-box .direct_questions .content_box .box ul li #directQuestionsContentTitle8:checked + .faq_icon
+*/
+.section .direct_questions-box .direct_questions .content_box .box ul ul .faq_icon-font.active {
+	transform: rotate(150deg);
+}
+
+
+	/*(COPYRIGHT)*/
+.section .copyright_box {
+	//margin-top: 100rem;
+	background-color: #202020ff;
+	//#100041;
+	//#000000;
+	width: 100%;
+	padding-top: 4rem;
+}
+.section .copyright_box .copyright {
+	//padding-top: 15rem;
+	//width: 90%;
+	//margin: auto;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.section .copyright_box .copyright .title-box {
+	width: 90%;
+	margin: auto;
+}
+.section .copyright_box .copyright .title-box img {
+	
+}
+.section .copyright_box .copyright .title-box p {
+	color: #A9A9A9;
+	font-size: 1rem;
+	line-height: 4rem;
+	text-align: left;
+	//border: 1px solid #ff0000;
+	//width: 100%;
+}
+.section .copyright_box .copyright .main_box {
+	margin-top: 6rem;
+}
+.section .copyright_box .copyright .main_box .main {
+	width: 90%;
+	margin: auto;
+	color: #FFFFFF;
+}
+.section .copyright_box .copyright .main_box .main ul {
+	//width: 90%;
+	//margin: auto;
+	padding: 0;
+	margin-top: 6rem;
+	//margin: 6rem auto;
+	//border: 1px solid #fff;
+	
+}
+.section .copyright_box .copyright .main_box .main ul li {
+	list-style: none;
+	color: #A9A9A9;
+	font-size: 1rem;
+	font-family: var(--third-font);
+	line-height: 3.5rem;
+	margin-top: 2rem;
+}
+.section .copyright_box .copyright .main_box .main ul label {
+	display: block;
+	//color: #FFFFFF;
+	//#0120c5ff;
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: var(--second-font);
+	margin-bottom: 4rem;
+}
+.section .copyright_box .copyright .main_box .main ul label:before {
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	//#0120c5ff;
+	//#0024e3ff;
+	//#ff0000;
+	width: 15%;
+	height: .5rem;
+	margin-top: 5rem;
+}
+.section .copyright_box .copyright .main_box .main ul li i {
+	
+}
+.section .copyright_box .copyright .main_box .main ul li span {
+	
+}
+.section .copyright_box .copyright .main_box .main-copyright {
+	background-color: #2e2e2eff;
+	width: 100%;
+	padding: 4rem 0 2.5rem 0;
+	margin-top: 4rem;
+}
+.section .copyright_box .copyright .main_box .main-copyright .paragraph-premium {
+	//color: #FFFFFF;
+	font-size: 2.5rem;
+	font-family: var(--second-font);
+	line-height: 3.5rem;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+}
+.section .copyright_box .copyright .main_box .main-copyright .social_media {
+	padding: 0;
+	margin: 1rem auto;
+	//margin-left: 1rem;
+	text-align: center;
+}
+.section .copyright_box .copyright .main_box .main-copyright .social_media li {
+	display: inline-block;
+}
+.section .copyright_box .copyright .main_box .main-copyright .social_media li a {
+	color: #FFFFFF;
+	font-size: 3.5rem;
+	//letter-spacing: 2rem;
+	font-weight: 500;
+	margin: 0 1rem 0 1rem;
+	//text-align: center;
+}
