@@ -34,6 +34,3 @@ Proyek ini dibuat untuk:
 - readline-sync
 - linebyline
 - lodash (utility helper)
-
-## 📁 Struktur Direktori
-
